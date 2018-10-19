@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stock Exchange - Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="assets/materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style media="screen">
+    #market-watch{
+      margin-left: 2%;
+    }
+    .bordered {
+      border-top: 1px solid;
+      border-left: 1px solid;
+      border-right: 1px solid;
+
+      border-bottom: 1px solid;
+      border-color: gray;
+    }
+
+    .dark-grey {
+      background: #2a2b39;
+    }
+
+    .light-grey {
+      background: #303140;
+    }
+    .grey {
+      color: #6c6d7f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Navigation bar -->
+  <div class="navbar-fixed">
+    <nav class="black">
+      <div class="nav-wrapper">
+        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+        <a href="#" class="brand-logo center">National Stock Exchange</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- Side navigation bar -->
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="assets/images/office.jpg" alt="">
+        </div>
+        <a href="#user"><img class="circle" src="assets/images/yuna.jpg"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">johndoe@gmail.com</span></a>
+      </div>
+    </li>
+    <li class="active"><a href="#"><i class="material-icons">dashboard</i>Dashboard</a></li>
+    <li><a href="#"><i class="material-icons">live_tv</i>Live Market</a></li>
+    <li><a href="#"><i class="material-icons">airplanemode_active</i>Domestic Investors</a></li>
+    <li><a href="#"><i class="material-icons">airplanemode_active</i>International Inverstors</a></li>
+    <li><a href="#"><i class="material-icons">input</i>Logout</a></li>
+  </ul>
+
+
+  <!-- Content -->
+  <br>
+  <div class="">
+    <div class="row">
+
+    <div id="market-watch" class="col l5 bordered">
+        <h5 class="align-center">Market Watch</h5>
+        <h6 style="font-weight:10px">Nifty 50</h6>
+        <h5 class="red-text">10,303.55 -149.50 <i class="material-icons">arrow_drop_down_circle</i>-1.43%</h5>
+
+        <br><br>
+        <div class="col l12">
+
+          <div class="col l4 bordered">
+            <h6 class="center green-text">Advances</h6>
+            <h4 class="center green-text">18</h4>
+          </div>
+
+
+          <div class="col l4 bordered">
+            <h6 class="center red-text">Decline</h6>
+            <h4 class="center red-text">30</h4>
+          </div>
+
+          <div class="col l4 bordered">
+            <h6 class="center darkgray-text">Unchanged</h6>
+            <h4 class="center darkgray-text">2</h4>
+          </div>
+        </div>
+        <div class="col l12">
+          <br>
+        </div>
+      </div>
+      <div class="col l1"></div>
+      <div id="currency rate" class="col l5 bordered">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="dark-grey col l2">
+        <h4 class="white-text center">HSI</h4>
+        <h3 class="grey-text darken-2 center">25,561.40</h3>
+          <center><i class="material-icons teal-text medium">arrow_drop_up</i></center>
+      </div>
+      <div class="light-grey col l2">
+        <h4 class="white-text center">DOW</h4>
+        <h3 class="grey-text darken-2 center">25,454.83</h3>
+        <center><i class="material-icons teal-text medium">arrow_drop_up</i></center>
+      </div>
+      <div class="dark-grey col l2">
+        <h4 class="white-text center">DAX</h4>
+        <h3 class="grey-text darken-2 center">11,580.41</h3>
+        <center><i class="material-icons teal-text medium">arrow_drop_up</i></center>
+      </div>
+      <div class="light-grey col l2">
+        <h4 class="white-text center">DOLLAR</h4>
+        <h3 class="grey-text darken-2 center">73.52</h3>
+        <center><i class="material-icons red-text medium">arrow_drop_down</i></center>
+      </div>
+      <div class=" dark-grey col l2">
+        <h4 class="white-text center">GOLD</h4>
+        <h3 class="grey-text darken-2 center">31,926.00</h3>
+        <center><i class="material-icons red-text medium">arrow_drop_down</i></center>
+      </div>
+      <div class="light-grey col l2">
+        <h4 class="white-text center">CRUDE</h4>
+        <h3 class="grey-text darken-2 center">5,109.00</h3>
+        <center><i class="material-icons teal-text medium">arrow_drop_up</i></center>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <script type="text/javascript" src="assets/materialize/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+</body>
+</html>
