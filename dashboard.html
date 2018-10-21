@@ -75,19 +75,16 @@
   <div class="row">
       <div class="carousel carousel-slider center">
 
-        <div class="carousel-item red white-text" href="#">
-          <h2>First Panel</h2>
-          <p class="white-text">This is the first panel</p>
+        <div class="carousel-item" href="#">
+          <img class="img img-responsive" src="assets/images/image1.jpg" alt="">
         </div>
-        <div class="carousel-item amber white-text" href="#">
-          <h2>Second Panel</h2>
-          <p class="white-text">This is the first panel</p>
+        <div class="carousel-item" href="#">
+          <img class="img img-responsive" src="assets/images/image2.jpg" alt="">
         </div>
-        <div class="carousel-item teal white-text" href="#">
-          <h2>Third Panel</h2>
-          <p class="white-text">This is the first panel</p>
+        <div class="carousel-item" href="#">
+          <img class="img img-responsive" src="assets/images/image3.jpg" alt="">
         </div>
-        <div class="carousel-item blue white-text" href="#">
+        <div class="carousel-item" href="#">
           <h2>Fourth Panel</h2>
           <p class="white-text">This is the first panel</p>
         </div>
@@ -126,6 +123,9 @@
       </div>
     </div>
   </div>
+  <footer>
+    
+  </footer>
 
 
   <script type="text/javascript" src="assets/materialize/js/jquery-3.3.1.min.js"></script>
@@ -136,7 +136,8 @@
       $('.sidenav').sidenav();
       $('.carousel.carousel-slider').carousel({
         fullWidth: true,
-        indicators: true
+        indicators: true,
+        duration: 200,
       });
     });
   </script>
