@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stock Exchange | Mutual Fund</title>
+    <link rel="stylesheet" type="text/css" href="assets/materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style media="screen">
+      .heading {
+        border-bottom : 3px solid;
+        border-color: teal;
+      }
+      table{
+        border-top: 2px solid;
+        border-left: 2px solid;
+        border-bottom: 2px solid;
+        border-right: 2px solid;
+      }
+      th {
+        background: #171818;
+        border-bottom: 2px solid;
+        color:white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main Navigation bar -->
+    <div class="navbar-fixed">
+      <nav class="black">
+        <div class="nav-wrapper">
+          <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+          <a href="#" class="brand-logo center">Stock Exchange</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="assets/images/office.jpg" alt="">
+          </div>
+          <a href="#user"><img class="circle" src="assets/images/yuna.jpg"></a>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"><span class="white-text email">johndoe@gmail.com</span></a>
+        </div>
+      </li>
+      <li><a href="#"><i class="material-icons">dashboard</i>Dashboard</a></li>
+      <li><a href="marketopportunity.html"><i class="material-icons">live_tv</i>Market Opportunity</a></li>
+      <li class="active"><a href="#"><i class="material-icons">airplanemode_active</i>Mutual Funds and SIP</a></li>
+      <li><a href="loginform.html"><i class="material-icons">input</i>Logout</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="heading col l6 offset-l3">
+        <h3 class="center">Mutual Fund and SIP</h3>
+        <h6 class="center">BUILD YOUR WEALTH IN SMALL STEPS</h6>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="row">
+      <div class="col l10 offset-l1">
+        <table class="responsive-table centered">
+          <thead>
+            <tr>
+              <th colspan="1">FUNDS WE LIKE</th>
+              <th colspan="1">NAV</th>
+              <th colspan="1" rowspan="1">RETURNS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SBI ETF GOLD - GROWTH</td>
+              <td>2,909.18</td>
+              <td>3.07</td>
+            </tr>
+            <tr>
+              <td>ADITYA BIRLA SUN LIFE GOLD ETF - GROWTH</td>
+              <td>2,909.18</td>
+              <td>3.07</td>
+            </tr>
+            <tr>
+              <td>ICICI PRUDENTIAL GOLD ETF - GROWTH</td>
+              <td>2,909.18</td>
+              <td>3.07</td>
+            </tr>
+            <tr>
+              <td>ADITYA BIRLA SUN LIFE INDIA GENNEXT FUND - GROWTH</td>
+              <td>2,909.18</td>
+              <td>3.07</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="assets/materialize/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stock Exchange | Market Opportunity</title>
+    <link rel="stylesheet" type="text/css" href="assets/materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style media="screen">
+      .heading {
+        border-bottom : 3px solid;
+        border-color: teal;
+      }
+    </style>
+  </head>
+  <body style="background:lightgray;">
+    <!-- Main Navigation bar -->
+    <div class="navbar-fixed">
+      <nav class="black">
+        <div class="nav-wrapper">
+          <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+          <a href="#" class="brand-logo center">Stock Exchange</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Side navigation bar -->
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="assets/images/office.jpg" alt="">
+          </div>
+          <a href="#user"><img class="circle" src="assets/images/yuna.jpg"></a>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"><span class="white-text email">johndoe@gmail.com</span></a>
+        </div>
+      </li>
+      <li><a href="dashboard.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
+      <li class="active"><a href="#"><i class="material-icons">live_tv</i>Market Opportunity</a></li>
+      <li><a href="mutualfund.html"><i class="material-icons">airplanemode_active</i>Mutual Funds and SIP</a></li>
+      <li><a href="loginform.html"><i class="material-icons">input</i>Logout</a></li>
+    </ul>
+    <div class="row">
+      <div class="heading col l6 offset-l3">
+        <h3 class="center">Market Opportunity</h3>
+        <h6 class="center">UNLOCK THE ONE JUST RIGHT FOR YOU</h6>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="heading col l1 offset-l1">
+        <h5 class="center">NIFTY</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col l10 offset-l1">
+        <canvas id="myChart" width="100" height="30%"></canvas>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="heading col l1 offset-l1">
+        <h5 class="center">SENSEX</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col l10 offset-l1">
+        <canvas id="myChart1" width="100" height="30%"></canvas>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="assets/materialize/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+    </script>
+    <script type="text/javascript">
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["9:19 AM", "10:29 AM", "11:39 AM", "12:49 PM", "13:59 PM", "15:09 PM"],
+            datasets: [{
+                label: 'Points',
+                data: [10359.6, 10321.55, 10348.8, 10317.45, 10294.2],
+
+                backgroundColor: [
+                    'rgba(0, 128, 128, 1)',
+                    'rgba(0, 128, 128, 1)',
+                    'rgba(0, 128, 128, 1)',
+                    'rgba(0, 128, 128, 1)',
+                    'rgba(0, 128, 128, 1)',
+                    'rgba(0, 128, 128, 1)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,0)',
+                    'rgba(54, 162, 235, 0)',
+                    'rgba(255, 206, 86, 0)',
+                    'rgba(75, 192, 192, 0)',
+                    'rgba(153, 102, 255, 0)',
+                    'rgba(255, 159, 64, 0)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:false
+                    }
+                }]
+            }
+        }
+      });
+    </script>
+
+    <script type="text/javascript">
+        var ctx = document.getElementById("myChart1").getContext('2d');
+        var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["9:19 AM", "10:29 AM", "11:39 AM", "12:49 PM", "13:59 PM", "15:09 PM"],
+            datasets: [{
+                label: 'Points',
+                data: [10359.6, 10321.55, 10348.8, 10317.45, 10294.2],
+
+                backgroundColor: [
+                    'rgba(0, 128, 128, 1)',
+                    'rgba(0, 128, 128, 1)',
+                    'rgba(0, 128, 128, 1)',
+                    'rgba(0, 128, 128, 1)',
+                    'rgba(0, 128, 128, 1)',
+                    'rgba(0, 128, 128, 1)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,0)',
+                    'rgba(54, 162, 235, 0)',
+                    'rgba(255, 206, 86, 0)',
+                    'rgba(75, 192, 192, 0)',
+                    'rgba(153, 102, 255, 0)',
+                    'rgba(255, 159, 64, 0)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:false
+                    }
+                }]
+            }
+        }
+      });
+    </script>
+  </body>
+</html>
